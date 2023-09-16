@@ -23,4 +23,11 @@
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
     z-index: 1; /* Place it above the background image */
   }
+
+  .home p{
+    display: inline-flex;
+    width: 50%;
+    font-size: larger;
+    color: white;
+  }
   
