@@ -1,10 +1,11 @@
 import React from 'react';
+import '../css/About.css'; // Import the CSS file with the correct relative path
 
 function AboutUs() {
   return (
     <div className="about-us">
       <div className="about-title">
-        <h2>About Us</h2>
+        <h2 className='title'>About Us</h2>
       </div>
       <div className="about-content">
         <p>
