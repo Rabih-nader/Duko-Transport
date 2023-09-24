@@ -1,0 +1,30 @@
+/* Footer Styles */
+footer {
+    background-color: #FFC436; /* Background color for the footer */
+    color: #FFFFFF; /* Text color for the footer content */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .footer-content {
+    max-width: 960px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center-align the content horizontally */
+  }
+  
+  .footer-text {
+    margin: 0; /* Remove default margin for the paragraph */
+    font-size: 16px; /* Adjust the font size as needed */
+    position: relative; /* Add relative positioning to the paragraph */
+  }
+  
+  .footer-text::before {
+    content: ""; /* Add an empty content */
+    display: block; /* Make it a block-level element */
+    position: absolute; /* Position it absolutely within the paragraph */
+    top: -10px; /* Adjust the top position to control the line's height */
+    left: 50%; /* Center it horizontally */
+    width: 80%; /* Adjust the width of the line */
+    height: 2px; /* Adjust the height of the line */
+    background-color: #337CCF; /* Color of the line */
+    transform: translateX(-50%); /* Center the line horizontally */
+  }
