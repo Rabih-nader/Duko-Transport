@@ -1,0 +1,81 @@
+/* Services Section Styles */
+.services-container {
+    background-color: #fff; /* White background */
+    padding: 10px 10px 50px 10px; /* Adjust the padding as needed */
+    position: relative; /* Add relative positioning to the container */
+    z-index: 1; /* Ensure the container is above the circle */
+  }
+  
+  /* Add a circle to the background using a pseudo-element */
+  .services-container::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position it absolutely */
+    width: 400px; /* Set the width of the circle */
+    height: 400px; /* Set the height of the circle */
+    background-color: #1450A3; /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+    top: 55%; /* Position it at the vertical center */
+    left: 15%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it both vertically and horizontally */
+    z-index: -1; /* Place the circle below the container content */
+  }
+
+  /* Add a triangle to the background using a pseudo-element */
+.services-container::after {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position it absolutely */
+    width: 0; /* Set the width to zero */
+    height: 0; /* Set the height to zero */
+    border-left: 365px solid transparent; /* Left border */
+    border-right: 235px solid transparent; /* Right border */
+    border-bottom: 250px solid #FFC436; /* Bottom border (triangle color) */
+    top: 30%; /* Position it at the vertical center */
+    left: 90%; /* Position it at the horizontal center */
+    transform: translate(-65%, -50%) rotate(345deg); /* Center it both vertically and horizontally */
+    z-index: -1; /* Place the triangle below the container content */
+  }
+  
+  .services-content {
+    max-width: 960px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center-align the content horizontally */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .service-cards {
+    display: flex; /* Create a flex container */
+    justify-content: center; /* Distribute cards evenly */
+    flex-wrap: nowrap; /* Prevent cards from wrapping to the next row */
+    gap: 180px;
+  }
+  
+  .service-card {
+    flex: 0 0 calc(33.33% - 150px); /* Adjust the width of each card */
+    background-color: #F1F1F1; /* Background color for each card */
+    padding: 20px;
+    margin-right: 20px; /* Add space between cards */
+    border-radius: 0px; /* Add some rounded corners */
+    box-shadow: 10px 10px 10px 0px #000000ab, 18px 18px 0px 0px #FFC436; /* Red blurry shadow */
+    height: 250px;
+  }
+  
+  /* Remove the right margin from the last card to avoid extra spacing */
+  .service-card:last-child {
+    margin-right: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
