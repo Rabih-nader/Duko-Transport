@@ -30,7 +30,7 @@
     border-right: 235px solid transparent; /* Right border */
     border-bottom: 250px solid #FFC436; /* Bottom border (triangle color) */
     top: 30%; /* Position it at the vertical center */
-    left: 90%; /* Position it at the horizontal center */
+    left: 82%; /* Position it at the horizontal center */
     transform: translate(-65%, -50%) rotate(345deg); /* Center it both vertically and horizontally */
     z-index: -1; /* Place the triangle below the container content */
   }
