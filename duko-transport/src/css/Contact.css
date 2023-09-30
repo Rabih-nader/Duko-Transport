@@ -1,70 +1,112 @@
 /* Contact.css */
+
+/* Container Styles */
 .contact-container {
-    background-color: #1450A3; /* Background color */
-    color: white; /* Font color */
-    padding: 20px; /* Add padding as needed */
-    text-align: center;
-  }
-  
-  .contact-title h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold;
-  }
-  
-  .contact-content {
-    display: flex;
-    justify-content: space-between; /* Arrange sections side by side */
-    align-items: flex-start; /* Align sections to the top */
-    margin-top: 20px; /* Adjust the margin as needed */
-  }
-  
-  .contact-links,
-  .contact-info,
-  .social-media {
-    flex: 1; /* Equal width for each section */
-    margin: 0 10px; /* Adjust the spacing between sections as needed */
-  }
-  
-  .contact-links h2,
-  .contact-info h2,
-  .social-media h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold;
-  }
-  
-  .contact-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact-links li {
-    margin: 10px 0; /* Adjust the spacing between links as needed */
-  }
-  
-  .contact-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .contact-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .contact-info address,
-  .contact-info p {
-    margin: 10px 0; /* Adjust the spacing between elements as needed */
-  }
-  
-  .social-media a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px; /* Adjust the font size as needed for the icons */
-    margin: 5px; /* Adjust the spacing between icons as needed */
-  }
-  
-  /* Add hover effect to icons */
-  .social-media a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #1450A3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title Styles */
+.contact-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Content Container Styles */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Individual Section Styles */
+.contact-form,
+.contact-links,
+.contact-info,
+.social-media {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Section Titles Styles */
+.contact-form h2,
+.contact-links h2,
+.contact-info h2,
+.social-media h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* List Styles */
+.contact-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List Item Styles */
+.contact-links li {
+  margin: 10px 0;
+}
+
+/* Link Styles */
+.contact-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Link Hover Styles */
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Address and Paragraph Styles */
+.contact-info address,
+.contact-info p {
+  margin: 10px 0;
+}
+
+/* Social Media Link Styles */
+.social-media a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 5px;
+}
+
+/* Social Media Link Hover Styles */
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 5px;
+}
+
+/* Submit Button Styles */
+button[type="submit"] {
+  width: 100%;
+  background-color: #337CCF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Submit Button Hover Styles */
+button[type="submit"]:hover {
+  background-color: #FFC436;
+}

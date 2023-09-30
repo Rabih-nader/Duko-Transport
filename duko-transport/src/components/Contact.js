@@ -11,10 +11,8 @@ function ContactUs() {
         <div className="contact-form">
           <h2>Send Message</h2>
           <form>
-            <div className="form-group">
+            <div className="form-group" style={{display:'flex', gap:'10px'}}>
               <input type="text" id="name" name="name" placeholder="Your Name" />
-            </div>
-            <div className="form-group">
               <input type="email" id="email" name="email" placeholder="Your Email" />
             </div>
             <div className="form-group">

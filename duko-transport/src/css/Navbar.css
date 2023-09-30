@@ -10,6 +10,7 @@
   left: 0;
   right: 0;
   z-index: 999;
+  background-color: rgba(0, 0, 0, 0.44);
 }
 
 .navbar h1 {
@@ -42,7 +43,7 @@
 }
 
 .navbar a:hover {
-  color: #ffffff80; /* Change the color on hover (with opacity) */
+  color: #FFC436; /* Change the color on hover (with opacity) */
 }
 
 .navbar-right{
