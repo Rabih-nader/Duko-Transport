@@ -110,37 +110,22 @@ button[type="submit"]:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  /* Adjust spacing and alignment for smaller screens */
   .contact-content {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr; /* One column for mobile screens */
+    grid-row-gap: 20px; /* Gap between rows */
   }
 
-  /* Expand the width of sections on smaller screens */
-  .contact-form,
-  .contact-links,
-  .contact-info,
-  .social-media {
-    max-width: none;
-  }
-
-  /* Center-align buttons on smaller screens */
-  button[type="submit"] {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Change the order of sections on mobile screens */
   .contact-links {
-    order: 2;
+    order: 1; /* Place "Links" div first */
   }
 
   .contact-form {
-    order: 3;
+    order: 2; /* Place "Send Message" div second */
   }
 
   .social-media {
-    order: 4;
+    order: 3; /* Place "Follow Us" div third */
   }
 }
+

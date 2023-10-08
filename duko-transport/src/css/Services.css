@@ -4,6 +4,7 @@
   padding: 10px 10px 50px 10px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* Add a circle to the background using a pseudo-element */
