@@ -8,15 +8,10 @@
   text-align: center;
 }
 
-/* Title Styles */
-.contact-title h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 /* Content Container Styles */
 .contact-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
@@ -29,6 +24,7 @@
 .social-media {
   flex: 1;
   margin: 0 10px;
+  max-width: 400px;
 }
 
 /* Section Titles Styles */
@@ -38,6 +34,7 @@
 .social-media h2 {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0;
 }
 
 /* List Styles */
@@ -109,4 +106,41 @@ button[type="submit"] {
 /* Submit Button Hover Styles */
 button[type="submit"]:hover {
   background-color: #FFC436;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust spacing and alignment for smaller screens */
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Expand the width of sections on smaller screens */
+  .contact-form,
+  .contact-links,
+  .contact-info,
+  .social-media {
+    max-width: none;
+  }
+
+  /* Center-align buttons on smaller screens */
+  button[type="submit"] {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Change the order of sections on mobile screens */
+  .contact-links {
+    order: 2;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+
+  .social-media {
+    order: 4;
+  }
 }
