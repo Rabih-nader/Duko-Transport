@@ -12,7 +12,7 @@
 .contact-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
 }
@@ -20,8 +20,7 @@
 /* Individual Section Styles */
 .contact-form,
 .contact-links,
-.contact-info,
-.social-media {
+.contact-info {
   flex: 1;
   margin: 0 10px;
   max-width: 400px;
@@ -30,34 +29,11 @@
 /* Section Titles Styles */
 .contact-form h2,
 .contact-links h2,
-.contact-info h2,
-.social-media h2 {
+.contact-info h2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 0;
-}
-
-/* List Styles */
-.contact-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* List Item Styles */
-.contact-links li {
-  margin: 10px 0;
-}
-
-/* Link Styles */
-.contact-links a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Link Hover Styles */
-.contact-links a:hover {
-  text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 /* Address and Paragraph Styles */
@@ -66,18 +42,41 @@
   margin: 10px 0;
 }
 
-/* Social Media Link Styles */
+/* List Styles ---------------
+.contact-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}*/
+
+/* List Item Styles ---------------
+.contact-links li {
+  margin: 10px 0;
+}*/
+
+/* Link Styles ---------------
+.contact-links a {
+  color: white;
+  text-decoration: none;
+}*/
+
+/* Link Hover Styles ---------------
+.contact-links a:hover {
+  text-decoration: underline;
+}*/
+
+/* Social Media Link Styles ---------------
 .social-media a {
   color: white;
   text-decoration: none;
   font-size: 24px;
   margin: 5px;
-}
+}*/
 
-/* Social Media Link Hover Styles */
+/* Social Media Link Hover Styles ---------------
 .social-media a:hover {
   text-decoration: underline;
-}
+}*/
 
 /* Input Styles */
 input[type="text"],
@@ -111,21 +110,23 @@ button[type="submit"]:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .contact-content {
-    display: grid;
-    grid-template-columns: 1fr; /* One column for mobile screens */
-    grid-row-gap: 20px; /* Gap between rows */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    row-gap: 35px; /* Gap between rows */
   }
 
-  .contact-links {
-    order: 1; /* Place "Links" div first */
-  }
+  /* .contact-links {
+    order: 1; 
+  } */
 
-  .contact-form {
-    order: 2; /* Place "Send Message" div second */
-  }
+  /* .contact-form {
+    order: 2; 
+  } */
 
-  .social-media {
-    order: 3; /* Place "Follow Us" div third */
-  }
+  /* .social-media {
+    order: 3; 
+  } */
 }
 

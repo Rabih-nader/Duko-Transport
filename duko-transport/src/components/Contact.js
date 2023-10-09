@@ -21,14 +21,14 @@ function ContactUs() {
             <button type="submit">Send</button>
           </form>
         </div>
-        <div className="contact-links">
+        {/* <div className="contact-links">
           <h2>Links</h2>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
           </ul>
-        </div>
+        </div> */}
         <div className="contact-info">
           <h2>Contact</h2>
           <address>
@@ -37,13 +37,13 @@ function ContactUs() {
           <p>Email: example@email.com</p>
           <p>Phone: +1 (123) 456-7890</p>
         </div>
-        <div className="social-media">
+        {/* <div className="social-media">
           <h2>Follow Us</h2>
           <a href="#"><i className="fa fa-facebook"></i></a>
           <a href="#"><i className="fa fa-instagram"></i></a>
           <a href="#"><i className="fa fa-twitter"></i></a>
           <a href="#"><i className="fa fa-linkedin"></i></a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

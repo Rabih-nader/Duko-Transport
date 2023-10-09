@@ -2,16 +2,16 @@
 footer {
     background-color: #FFC436; /* Background color for the footer */
     color: #FFFFFF; /* Text color for the footer content */
-    padding: 30px 0; /* Add padding to the top and bottom */
+    padding: 0 0 30px  0; /* Add padding to the top and bottom */
     text-align: center; /* Center-align the text */
     position: relative;
   }
   
   .footer-content {
     text-align: center;
-    
     max-width: 960px; /* Set a maximum width for the content */
     margin: 0 auto; /* Center-align the content horizontally */
+    padding-top: 5px;
   }
   
   .footer-text {
@@ -19,13 +19,14 @@ footer {
     font-size: 16px; /* Adjust the font size as needed */
     font-weight: bold;
     position: relative; /* Add relative positioning to the paragraph */
+    top: 20px;
   }
   
   .footer-text::before {
     content: ""; /* Add an empty content */
     display: block; /* Make it a block-level element */
     position: absolute; /* Position it absolutely within the paragraph */
-    top: -10px; /* Adjust the top position to control the line's height */
+    top: -5px; /* Adjust the top position to control the line's height */
     left: 50%; /* Center it horizontally */
     width: 80%; /* Adjust the width of the line */
     height: 2px; /* Adjust the height of the line */
@@ -51,8 +52,49 @@ footer {
     transition: background-color 0.3s ease-in-out;
   }
   
-  .scroll-button:hover {
+.scroll-button:hover {
     background-color: #337CCF;
     color: #ffffff;
   }
   
+  /* Social Media Link Styles ---------------*/
+.social-media a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 5px;
+}
+
+/* Social Media Link Hover Styles ---------------*/
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px){
+
+  .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+  }
+  .footer-text {
+    margin: 0; /* Remove default margin for the paragraph */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+    position: relative; /* Add relative positioning to the paragraph */
+    top: 18px;
+  }
+
+  .footer-text::before {
+    content: ""; /* Add an empty content */
+    display: block; /* Make it a block-level element */
+    position: absolute; /* Position it absolutely within the paragraph */
+    top: -15px; /* Adjust the top position to control the line's height */
+    left: 50%; /* Center it horizontally */
+    width: 80%; /* Adjust the width of the line */
+    height: 2px; /* Adjust the height of the line */
+    background-color: #337CCF; /* Color of the line */
+    transform: translateX(-50%); /* Center the line horizontally */
+  }
+}
