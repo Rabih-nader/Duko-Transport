@@ -1,4 +1,8 @@
 /* Home.css */
+.home-content{
+  display: flex;
+  justify-content: center;
+}
 .home {
     background-image: url('../Assets/HomeBG.webp');
     background-size: cover;
@@ -11,6 +15,7 @@
     padding: 20px;
     text-align: center;
     position: relative;
+    z-index: -1;
   }
   
   .home::after {
@@ -21,7 +26,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 1; /* Place it above the background image */
+    z-index: 0; /* Place it above the background image */
   }
 
   .home p{
@@ -29,5 +34,12 @@
     width: 50%;
     font-size: larger;
     color: white;
+    z-index: 1;
   }
-  
+  @media (max-width: 768px){
+
+    .home p{
+      width: 100%;
+
+    }
+  }

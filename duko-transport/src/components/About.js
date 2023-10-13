@@ -8,7 +8,7 @@ function AboutUs() {
         <h2 className='title'>About Us</h2>
       </div>
       <div className="about-content">
-        <p>
+        <p className="about-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis ut odio sollicitudin elementum.
           Suspendisse potenti. Proin bibendum ante at quam accumsan, id interdum odio finibus. Vivamus volutpat
           vestibulum velit, a feugiat arcu hendrerit at. Sed hendrerit massa eu libero luctus, vel ultricies urna
