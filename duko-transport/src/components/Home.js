@@ -5,6 +5,7 @@ import '../css/Home.css'; // Import the CSS file with the correct relative path
 
 function Home() {
   return (
+    <section id='home'>
     <div className="home">
       <div className="home-content">
         <p>
@@ -13,6 +14,7 @@ function Home() {
         </p>
       </div>
     </div>
+    </section>
   );
 }
 

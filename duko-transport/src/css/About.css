@@ -17,6 +17,11 @@
   display: flex;
   justify-content: center;
 }
+.about-p{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
 .about-content{
   z-index: 1;
 }

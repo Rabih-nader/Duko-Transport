@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink
 import '../css/Navbar.css';
 
 function Navbar() {
@@ -7,6 +8,9 @@ function Navbar() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   // Define a dynamic CSS class based on the isMobileMenuOpen state
@@ -21,10 +25,56 @@ function Navbar() {
         <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
       </button>
       <ul className={`navbar-right ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+
+        <li><ScrollLink 
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="nav-link"
+          onClick={closeMobileMenu}
+        >
+          Home
+          </ScrollLink></li>
+
+        <li><ScrollLink
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="nav-link"
+          onClick={closeMobileMenu}
+        >
+          About Us
+        </ScrollLink></li>
+        <li><ScrollLink
+          activeClass="active"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="nav-link"
+          onClick={closeMobileMenu}
+        >
+          Services
+        </ScrollLink></li>
+        <li><ScrollLink
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="nav-link"
+          onClick={closeMobileMenu}
+        >
+          Contact Us
+        </ScrollLink></li>
       </ul>
     </nav>
   );

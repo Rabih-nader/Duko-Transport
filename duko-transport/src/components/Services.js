@@ -3,7 +3,7 @@ import '../css/Services.css'; // Import the CSS file for styling
 
 function Services() {
   return (
-    <section className="services-container">
+    <section id='services' className="services-container">
       <div className="services-content">
         <h2>Services</h2>
         <div className="service-cards">

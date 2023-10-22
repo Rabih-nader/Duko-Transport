@@ -3,6 +3,7 @@ import '../css/Contact.css'; // Import the CSS file
 
 function ContactUs() {
   return (
+    <section id='contact'>
     <div className="contact-container">
       <div className="contact-title">
         {/* <h2>Contact Us</h2> */}
@@ -46,6 +47,7 @@ function ContactUs() {
         </div> */}
       </div>
     </div>
+    </section>
   );
 }
 
