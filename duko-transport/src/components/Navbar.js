@@ -9,8 +9,11 @@ function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Define a dynamic CSS class based on the isMobileMenuOpen state
+  const navbarClass = `navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`;
+
   return (
-    <nav className="navbar">
+    <nav className={navbarClass}>
       <div className="navbar-left">
         <h1>Duko Transport</h1>
       </div>

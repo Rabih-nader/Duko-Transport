@@ -75,4 +75,13 @@
   .mobile-menu-toggle {
     display: block; /* Show the mobile menu toggle button */
   }
+
+  .navbar.mobile-menu-open {    /* Add any other styles you want for the mobile menu open state */
+    flex-direction: column;
+    background-color: #000000f0;
+    height: 50%;
+  }
+  .navbar.mobile-menu-open h1{
+    display: flex;
+  }
 }
