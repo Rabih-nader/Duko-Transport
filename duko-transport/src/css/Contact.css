@@ -42,42 +42,6 @@
   margin: 10px 0;
 }
 
-/* List Styles ---------------
-.contact-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}*/
-
-/* List Item Styles ---------------
-.contact-links li {
-  margin: 10px 0;
-}*/
-
-/* Link Styles ---------------
-.contact-links a {
-  color: white;
-  text-decoration: none;
-}*/
-
-/* Link Hover Styles ---------------
-.contact-links a:hover {
-  text-decoration: underline;
-}*/
-
-/* Social Media Link Styles ---------------
-.social-media a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  margin: 5px;
-}*/
-
-/* Social Media Link Hover Styles ---------------
-.social-media a:hover {
-  text-decoration: underline;
-}*/
-
 /* Input Styles */
 input[type="text"],
 input[type="email"],
@@ -106,27 +70,25 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #FFC436;
 }
+.form-group{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .contact-content {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
+    align-items: stretch;
     row-gap: 35px; /* Gap between rows */
   }
 
-  /* .contact-links {
-    order: 1; 
-  } */
-
-  /* .contact-form {
-    order: 2; 
-  } */
-
-  /* .social-media {
-    order: 3; 
-  } */
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }
 }
 

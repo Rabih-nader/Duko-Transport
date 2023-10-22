@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 20px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; /* Center-align navigation tabs */
+  justify-content: flex-end; /* Center-align navigation tabs */
   align-items: center;
   flex-grow: 1; /* Allow tabs to take up available space */
 }
@@ -56,10 +56,16 @@
   font-size: 24px;
   color: white;
   padding: 10px;
-  position: absolute; /* Position the toggle button on the right side */
-  top: 10px;
-  right: 20px; /* Adjust the right position as needed */
-  z-index: 1000; /* Ensure the button is above other elements */
+  /* position: absolute; Position the toggle button on the right side */
+  /* top: 10px; */
+  /* right: 20px; 
+  z-index: 1000; */
+}
+.navbar-left {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -79,11 +85,16 @@
 
   .navbar.mobile-menu-open {    /* Add any other styles you want for the mobile menu open state */
     flex-direction: column;
+    align-items: stretch;
     background-color: #000000f0;
-    height: 50%;
+    height: 100vh;
   }
-  .navbar.mobile-menu-open h1{
-    display: flex;
-    padding-top: 10px;
+
+  .navbar ul {
+    justify-content: center; /* Center-align navigation tabs */
+  }
+
+  .mobile-menu-open .navbar-left {
+    flex-grow: 0;
   }
 }

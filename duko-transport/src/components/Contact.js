@@ -11,25 +11,15 @@ function ContactUs() {
       <div className="contact-content">
         <div className="contact-form">
           <h2>Send Message</h2>
-          <form>
-            <div className="form-group" style={{display:'flex', gap:'10px'}}>
+          <form className='form'>
+            <div className="form-group">
               <input type="text" id="name" name="name" placeholder="Your Name" />
               <input type="email" id="email" name="email" placeholder="Your Email" />
             </div>
-            <div className="form-group">
-              <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
-        {/* <div className="contact-links">
-          <h2>Links</h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </div> */}
         <div className="contact-info">
           <h2>Contact</h2>
           <address>
@@ -38,13 +28,6 @@ function ContactUs() {
           <p>Email: example@email.com</p>
           <p>Phone: +1 (123) 456-7890</p>
         </div>
-        {/* <div className="social-media">
-          <h2>Follow Us</h2>
-          <a href="#"><i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-instagram"></i></a>
-          <a href="#"><i className="fa fa-twitter"></i></a>
-          <a href="#"><i className="fa fa-linkedin"></i></a>
-        </div> */}
       </div>
     </div>
     </section>

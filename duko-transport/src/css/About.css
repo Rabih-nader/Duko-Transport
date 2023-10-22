@@ -5,6 +5,7 @@
   height: 40vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   /* justify-content: flex-start; */
   color: white;
   padding: 20px;
@@ -15,7 +16,10 @@
 }
 .about-title{
   display: flex;
+  align-self: center;
   justify-content: center;
+  position: absolute;
+  top: 30px;
 }
 .about-p{
   display: flex;

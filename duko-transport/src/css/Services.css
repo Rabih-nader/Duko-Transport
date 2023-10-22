@@ -37,7 +37,7 @@
 }
 
 .services-content {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   text-align: center;
   padding: 20px;
@@ -50,19 +50,20 @@ h2 {
 
 .service-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  gap: 180px;
+  /* gap: 180px; */
 }
 
 .service-card {
-  flex: 0 0 calc(33.33% - 150px);
+  /* flex: 0 0 calc(33.33% - 150px); */
   background-color: #F1F1F1;
   padding: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 0px;
   box-shadow: 10px 10px 10px 0px #000000ab, 18px 18px 0px 0px #FFC436;
   height: 250px;
+  border-radius: 5px;
 }
 
 /* Remove the right margin from the last card to avoid extra spacing */

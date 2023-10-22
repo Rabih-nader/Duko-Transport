@@ -20,10 +20,10 @@ function Navbar() {
     <nav className={navbarClass}>
       <div className="navbar-left">
         <h1>Duko Transport</h1>
+        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+        </button>
       </div>
-      <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-        <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
-      </button>
       <ul className={`navbar-right ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
 
         <li><ScrollLink 
@@ -35,6 +35,7 @@ function Navbar() {
           duration={500}
           className="nav-link"
           onClick={closeMobileMenu}
+
         >
           Home
           </ScrollLink></li>
