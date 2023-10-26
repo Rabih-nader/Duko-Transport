@@ -23,10 +23,10 @@ function ContactUs() {
         <div className="contact-info">
           <h2>Contact</h2>
           <address>
-            123 Main St, City, Country
+          46 Leith Dr, Bradford West Gwillimbury, ON
           </address>
-          <p>Email: example@email.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
+          <p>Email: dukotransportinc@email.com</p>
+          <p>Phone: +1 (647) 501-2092</p>
         </div>
       </div>
     </div>

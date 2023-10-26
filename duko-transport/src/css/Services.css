@@ -48,9 +48,14 @@ h2 {
   margin-bottom: 30px;
 }
 
+.p-services{
+  text-align: start;
+  line-height: 1.5;
+}
+
 .service-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   /* gap: 180px; */
 }
@@ -59,11 +64,12 @@ h2 {
   /* flex: 0 0 calc(33.33% - 150px); */
   background-color: #F1F1F1;
   padding: 20px;
-  /* margin-right: 20px; */
+  margin: 0 20px 0 20px;
   border-radius: 0px;
   box-shadow: 10px 10px 10px 0px #000000ab, 18px 18px 0px 0px #FFC436;
-  height: 250px;
   border-radius: 5px;
+  height: auto;
+  width: 205px;
 }
 
 /* Remove the right margin from the last card to avoid extra spacing */
