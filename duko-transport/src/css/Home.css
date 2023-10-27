@@ -1,13 +1,15 @@
 /* Home.css */
 .home-content{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .home {
     background-image: url('../Assets/HomeBG.webp');
     background-size: cover;
     background-position: center;
-    height: 35vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -31,7 +33,16 @@
 
   .home p{
     display: inline-flex;
-    width: 50%;
+     width: 80%; 
+    font-size: larger;
+    color: white;
+    z-index: 1;
+    line-height: 1.5;
+  }
+  .home h1{
+    display: flex;
+    justify-content: center;
+    width: 80%; 
     font-size: larger;
     color: white;
     z-index: 1;
