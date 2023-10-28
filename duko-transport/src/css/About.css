@@ -28,6 +28,7 @@
 }
 .about-content{
   z-index: 1;
+  line-height: 1.5;
 }
 
 /* Add a transparent overlay */

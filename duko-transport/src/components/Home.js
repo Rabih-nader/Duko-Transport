@@ -11,7 +11,7 @@ function Home() {
         <h1>
         Your Reliable Shipping Partner
         </h1>
-        <p>
+        <p className='about-p'>
         Welcome to Duko Transport Inc, your trusted shipping solution right here in Ontario, Canada.
         We specialize in providing efficient and secure shipping services tailored to your local needs.
         Whether it's moving freight, managing logistics, or ensuring timely deliveries within Ontario, we're here to make it happen.

@@ -10,10 +10,11 @@ function AboutUs() {
       </div>
       <div className="about-content">
         <p className="about-p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis ut odio sollicitudin elementum.
-          Suspendisse potenti. Proin bibendum ante at quam accumsan, id interdum odio finibus. Vivamus volutpat
-          vestibulum velit, a feugiat arcu hendrerit at. Sed hendrerit massa eu libero luctus, vel ultricies urna
-          tincidunt. Suspendisse potenti.
+        Welcome to Duko Transport Inc, your trusted shipping solution right here in Ontario, Canada.
+        We specialize in providing efficient and secure shipping services tailored to your local needs.
+        Whether it's moving freight, managing logistics, or ensuring timely deliveries within Ontario, we're here to make it happen.
+        With a strong commitment to reliability and customer satisfaction, Duko Transport Inc is your go-to partner for seamless transportation solutions.
+       <br/> Let's simplify your shipping experience.
         </p>
       </div>
     </div>
