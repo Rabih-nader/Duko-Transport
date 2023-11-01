@@ -14,13 +14,13 @@
   margin-top: 20px;
   
 }
-.about-title{
+/* .about-title{
   display: flex;
   align-self: center;
   justify-content: center;
   position: absolute;
-  top: 30px;
-}
+  top: 60px;
+} */
 .about-p{
   display: flex;
   justify-content: center;
@@ -29,6 +29,8 @@
 .about-content{
   z-index: 1;
   line-height: 1.5;
+  width: 65%;
+  align-self: center;
 }
 
 /* Add a transparent overlay */
@@ -47,7 +49,16 @@
   font-size: 24px;
   font-weight: bold;
   color: white;
-  margin: 0;
-  align-self: flex-start;
-  z-index: 1; /* Higher z-index to place the title above the overlay */
+  margin-bottom: 20px;
+ /*  align-self: flex-start;
+  z-index: 1; Higher z-index to place the title above the overlay */
+}
+
+@media (max-width: 768px){
+
+  .about-content{
+    width: 100%;
+    align-self: center;
+  }
+
 }

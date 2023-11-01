@@ -11,11 +11,13 @@
 /* Content Container Styles */
 .contact-content {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
   align-content: center;
+  gap: 45px;
 }
 
 /* Individual Section Styles */

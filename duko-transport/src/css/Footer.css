@@ -1,10 +1,12 @@
 /* Footer Styles */
 footer {
-    background-color: #FFC436; /* Background color for the footer */
+    background-color: #1450A3; /* Background color for the footer */
     color: #FFFFFF; /* Text color for the footer content */
     padding: 0 0 30px  0; /* Add padding to the top and bottom */
     text-align: center; /* Center-align the text */
     position: relative;
+    border-top: 1px solid #FFC436;
+    /* border-color: #FFC436; */
   }
   
   .footer-content {
@@ -22,27 +24,28 @@ footer {
     top: 20px;
   }
   
-  .footer-text::before {
-    content: ""; /* Add an empty content */
-    display: block; /* Make it a block-level element */
-    position: absolute; /* Position it absolutely within the paragraph */
-    top: -5px; /* Adjust the top position to control the line's height */
-    left: 50%; /* Center it horizontally */
-    width: 80%; /* Adjust the width of the line */
-    height: 2px; /* Adjust the height of the line */
-    background-color: #337CCF; /* Color of the line */
-    transform: translateX(-50%); /* Center the line horizontally */
-  }
+  /* .footer-text::before {
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    top: -5px; 
+    left: 50%; 
+    width: 80%; 
+    height: 2px;
+    background-color: #337CCF;
+    transform: translateX(-50%);
+  } */
 
   .scroll-button {
     position: absolute;
-    top: -55px; /* Adjust this value to position the button */
+    top: -60px; /* Adjust this value to position the button */
     right: 15px; /* Adjust this value to position the button */
     width: 50px;
     height: 50px;
     background-color: #FFC436;
     color: #ffffff;
-    border-color: #ffffff;
+    font-size: 25px;
+    border-color: #FFC436;
     border-style: solid;
     border-radius: 50%; /* Make it circular */
     cursor: pointer;
@@ -72,29 +75,17 @@ footer {
 
 @media (max-width: 768px){
 
-  .social-media a {
+  /* .social-media a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     margin: 5px;
-  }
+  } */
   .footer-text {
     margin: 0; /* Remove default margin for the paragraph */
     font-size: 16px; /* Adjust the font size as needed */
     font-weight: bold;
     position: relative; /* Add relative positioning to the paragraph */
     top: 18px;
-  }
-
-  .footer-text::before {
-    content: ""; /* Add an empty content */
-    display: block; /* Make it a block-level element */
-    position: absolute; /* Position it absolutely within the paragraph */
-    top: -15px; /* Adjust the top position to control the line's height */
-    left: 50%; /* Center it horizontally */
-    width: 80%; /* Adjust the width of the line */
-    height: 2px; /* Adjust the height of the line */
-    background-color: #337CCF; /* Color of the line */
-    transform: translateX(-50%); /* Center the line horizontally */
   }
 }

@@ -10,7 +10,7 @@ function ContactUs() {
       </div>
       <div className="contact-content">
         <div className="contact-form">
-          <h2>Send Message</h2>
+          <h2>Contact</h2>
           <form className='form'>
             <div className="form-group">
               <input type="text" id="name" name="name" placeholder="Your Name" />
@@ -21,7 +21,6 @@ function ContactUs() {
           </form>
         </div>
         <div className="contact-info">
-          <h2>Contact</h2>
           <address>
           46 Leith Dr, Bradford West Gwillimbury, ON
           </address>

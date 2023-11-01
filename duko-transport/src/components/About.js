@@ -5,10 +5,9 @@ function AboutUs() {
   return (
     <section id='about'>
     <div className="about-us">
-      <div className="about-title">
-        <h2 className='title'>About Us</h2>
-      </div>
       <div className="about-content">
+      <h2 className='title'>About Us</h2>
+
         <p className="about-p">
         Welcome to Duko Transport Inc, your trusted shipping solution right here in Ontario, Canada.
         We specialize in providing efficient and secure shipping services tailored to your local needs.

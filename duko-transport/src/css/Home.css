@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  width: 65%;
+  align-self: center;
 }
 .home {
     background-image: url('../Assets/HomeBG.webp');
@@ -58,6 +60,10 @@
 
     .home p{
       width: 100%;
+    }
 
+    .home-content{
+      width: 100%;
+      align-self: center;
     }
   }
