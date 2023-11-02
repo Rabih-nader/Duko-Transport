@@ -22,11 +22,11 @@
 
 /* Individual Section Styles */
 .contact-form,
-.contact-links,
 .contact-info {
   flex: 1;
   margin: 0 10px;
   max-width: 400px;
+  align-self: center ;
 }
 
 /* Section Titles Styles */
