@@ -58,6 +58,12 @@
   }
   @media (max-width: 768px){
 
+    .home {
+      height: 100%;
+      padding: 100px 20px 20px 20px;
+
+    }
+
     .home p{
       width: 100%;
     }

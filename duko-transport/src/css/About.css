@@ -12,8 +12,8 @@
   text-align: center;
   position: relative;
   margin-top: 20px;
-  
 }
+
 /* .about-title{
   display: flex;
   align-self: center;
@@ -50,11 +50,15 @@
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
- /*  align-self: flex-start;
-  z-index: 1; Higher z-index to place the title above the overlay */
+  align-self: flex-start;
+  z-index: 1; /* Higher z-index to place the title above the overlay */
 }
 
 @media (max-width: 768px){
+
+  .about-us {
+    height: 100%;
+  }
 
   .about-content{
     width: 100%;
