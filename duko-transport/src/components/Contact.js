@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com'; // Import the emailjs-com library
+import emailjs from 'emailjs-com';
 
-import '../css/Contact.css'; // Import the CSS file
+import '../css/Contact.css';
 
 function Contact() {
   const form = useRef();
@@ -9,11 +9,16 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ghcp2po', 'template_6ddj1yb', form.current, 'itsn5APTdSuAMNui0')
+    emailjs.sendForm('service_mxh6ee9', 'template_tmh73ar', form.current, '_HSyeYnLWZZOGQNPo')
       .then((result) => {
         console.log(result.text);
+        alert('Email sent successfully!');
+
+        // Clear the form
+        form.current.reset();
       }, (error) => {
         console.log(error.text);
+        alert('Email sending failed. Please try again.');
       });
   };
 
