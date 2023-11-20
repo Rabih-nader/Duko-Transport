@@ -19,7 +19,14 @@ function Navbar() {
   return (
     <nav className={navbarClass}>
       <div className="navbar-left">
-        <h1>Duko Transport</h1>
+
+      <img
+  src={require('../Assets/DUKO trasport inc.png')}
+  alt="Logo"
+  className="logo-image"
+  style={{ width: '100px', height: 'auto' }}
+/>
+
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
         </button>

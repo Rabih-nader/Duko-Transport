@@ -6,13 +6,14 @@ import '../css/Contact.css';
 function Contact() {
   const form = useRef();
   const [emailValidation, setEmailValidation] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     // Validate email address
@@ -26,25 +27,24 @@ function Contact() {
       setEmailValidation(null);
     }
 
-    emailjs.sendForm('service_mxh6ee9', 'template_tmh73ar', form.current, '_HSyeYnLWZZOGQNPo')
-      .then((result) => {
-        console.log(result.text);
-        alert('Email sent successfully!');
+    setLoading(true);
 
-        // Clear the form
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-        alert('Email sending failed. Please try again.');
-      });
+    try {
+      await emailjs.sendForm('service_mxh6ee9', 'template_tmh73ar', form.current, '_HSyeYnLWZZOGQNPo');
+      console.log('Email sent successfully!');
+      alert('Email sent successfully!');
+      form.current.reset();
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      alert('Email sending failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section id='contact'>
       <div className="contact-container">
-        <div className="contact-title">
-          <h2>Contact Us</h2>
-        </div>
         <div className="contact-content">
           <div className="contact-form">
             <h2>Contact</h2>
@@ -55,7 +55,7 @@ function Contact() {
                 {emailValidation && <p className="validation-error">{emailValidation}</p>}
               </div>
               <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-              <button type="submit">Send</button>
+              <button type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send'}</button>
             </form>
           </div>
           <div className="contact-info">
