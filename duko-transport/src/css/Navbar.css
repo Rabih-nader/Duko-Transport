@@ -4,13 +4,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 20px 20px;
+  padding: 15px 150px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.80);
   cursor: pointer;
 }
 
@@ -37,7 +37,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: #1450A3;
   font-weight: bold;
   font-size: 16px; /* Adjust the font size as needed */
   transition: color 0.3s ease;
@@ -67,8 +67,23 @@
   justify-content: space-between;
   align-items: center;
 }
+/* .ligo-image2{
+  width: 100%;
+  height: auto;
+} */
 
 @media (max-width: 768px) {
+
+  /* .logo-image{
+    width: 80%;
+    height: auto;
+  } */
+
+  .navbar{
+    height: 30px;
+    padding: 20px 30px;
+
+  }
   .navbar ul {
     display: none; /* Hide the desktop navbar items on mobile */
   }

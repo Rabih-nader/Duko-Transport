@@ -1,18 +1,51 @@
 .about-us {
-  background-image: url('../Assets/HINO L Series b 1 (1).png');
+  /* background-image: url('../Assets/HINO L Series b 1 (1).png'); */
+  /* background-image: linear-gradient(to right, #FFC436, #337CCF, #1450A3 , #191D88); */
+  background-image: linear-gradient(to right, #F8BF44, #16A9E1 , #1852A0 , #27316B);
   background-size: cover;
   background-position: center;
-  height: 55vh;
+  height: 45vh;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
   /* justify-content: flex-start; */
   color: white;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   position: relative;
   margin-top: 20px;
+
+  display: flex;
+  align-items: stretch;
 }
+
+.about-content {
+  flex: 1; /* This makes the content div take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-image {
+  flex: 0 0 30%; /* This makes the image div take up the remaining space */
+  margin-right: 40px; /* Adjust this margin as needed */
+  align-self: auto;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.about-image img {
+  width: 50%; /* This makes the image fill its container */
+  height: 100%; /* This makes the image fill its container */
+  object-fit: cover; /* This ensures the image covers the container without distortion */
+}
+
+ .about-p2{
+width: 70%;
+} 
+
 
 /* .about-title{
   display: flex;
@@ -21,19 +54,19 @@
   position: absolute;
   top: 60px;
 } */
-.about-p{
+/* .about-p{
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255);
-}
-.about-content{
+} */
+/* .about-content{
   z-index: 1;
   line-height: 1.5;
   width: 65%;
   align-self: center;
-}
+} */
 
-/* Add a transparent overlay */
+/* Add a transparent overlay 
 .about-us::before {
   content: '';
   position: absolute;
@@ -41,19 +74,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);  /* Use rgba to set opacity */
-  z-index: 0; /* Lower z-index to place the overlay below text */
-}
+  background-color: rgba(0, 0, 0, 0.5);  
+  z-index: 0; 
+}*/
 
-.title {
+/* .title {
   font-size: 24px;
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
   align-self: flex-start;
-  z-index: 1; /* Higher z-index to place the title above the overlay */
+  z-index: 1; 
+} */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .about-us {
+    height: 85vh;
+  }
 }
-
 @media (max-width: 768px){
 
   .about-us {
@@ -62,7 +99,20 @@
 
   .about-content{
     width: 100%;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
   }
 
+  .about-image{
+    display: none;
+  }
+  .about-p2{
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .mobile-menu-toggle {
+    color: #1852A0;
+  }
 }

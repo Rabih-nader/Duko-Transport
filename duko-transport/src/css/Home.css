@@ -5,11 +5,14 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  width: 65%;
+  width: 100%;
   align-self: center;
+  font-size: 35px;
+  padding-bottom: 85px;
+  position: relative;
 }
 .home {
-    background-image: url('../Assets/HINO L Series b 1.png');
+    background-image: url('../Assets/DUKO-trasport-inc---web2.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -23,16 +26,16 @@
     z-index: -1;
   }
   
-  .home::after {
+  /* .home::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 0; /* Place it above the background image */
-  }
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
+  } */
 
   .home p{
     display: inline-flex;
@@ -51,17 +54,25 @@
     z-index: 1;
   }
 
-  .about-p{
+  /* .about-p{
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
+  } */
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .home h1{
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      position: absolute;
+    }
   }
   @media (max-width: 768px){
 
     .home {
       height: 100%;
       padding: 100px 20px 20px 20px;
-
     }
 
     .home p{
@@ -71,5 +82,7 @@
     .home-content{
       width: 100%;
       align-self: center;
+      font-size: 14px;
+      padding-bottom: 5px;
     }
   }

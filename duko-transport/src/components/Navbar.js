@@ -23,8 +23,7 @@ function Navbar() {
       <img
   src={require('../Assets/DUKO trasport inc.png')}
   alt="Logo"
-  className="logo-image"
-  style={{ width: '100px', height: 'auto' }}
+  style={{ width: '85px', height: 'auto' }}
 />
 
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
